@@ -27,6 +27,11 @@ public class BirbScript : MonoBehaviour
             rb.velocity = Vector2.up * flapStr;
         }
 
+        if (transform.position.y > 17 || transform.position.y < -17)
+        {
+            logic.gameOver();
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
