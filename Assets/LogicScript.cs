@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class LogicScript : MonoBehaviour
 {
     public int score = 0;
-    public Text scoreText;
+    public Text ScoreText;
 
     [ContextMenu("Increase Score")]
-    public void adder(int scoreToAdd)
+    public void adder()
     {
-        score += scoreToAdd;
-        scoreText.text = score.ToString();
+        score++;
+        ScoreText.text = score.ToString();
     }
 }

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 360814473}
   - component: {fileID: 360814472}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  scoreText: {fileID: 360814472}
+  ScoreText: {fileID: 360814472}
 --- !u!4 &976087716
 Transform:
   m_ObjectHideFlags: 0
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 1908573531}
   - component: {fileID: 1908573530}
   - component: {fileID: 1908573532}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Birb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
