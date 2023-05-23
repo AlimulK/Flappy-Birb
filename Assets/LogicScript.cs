@@ -10,13 +10,13 @@ public class LogicScript : MonoBehaviour
     public Text ScoreText;
 
     [ContextMenu("Increase Score")]
-    public void adder()
+    public void Adder()
     {
         score++;
         ScoreText.text = score.ToString();
     }
 
-    public void gameOver()
+    public void GameOver()
     {
         SceneManager.LoadScene("Menu");
     }

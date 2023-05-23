@@ -19,23 +19,21 @@ public class BirbScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        // Check space is pressed
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-        {
-            // Sends birb upwards
-            rb.velocity = Vector2.up * flapStr;
-        }
 
         if (transform.position.y > 17 || transform.position.y < -17)
         {
-            logic.gameOver();
+            logic.GameOver();
         }
 
     }
 
+    public void Flap()
+    {
+        rb.velocity = Vector2.up * flapStr;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        logic.gameOver();
+        logic.GameOver();
     }
 }
